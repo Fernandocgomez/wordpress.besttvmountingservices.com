@@ -2,3 +2,7 @@
 .default-footer__nav .et-menu-nav {
     flex-direction: column;
 }
+
+body {
+    color: red;
+}
