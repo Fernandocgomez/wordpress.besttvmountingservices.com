@@ -1,0 +1,4 @@
+/* Default footer styles */
+.default-footer__nav .et-menu-nav {
+    flex-direction: column;
+}
