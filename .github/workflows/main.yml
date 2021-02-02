@@ -4,9 +4,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ dev ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,7 +22,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
         # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-        ftp-server: ${{ secrets.FTP_HOST }}
+        ftp-server: ${{ secrets.FTP_HOST_DEV }}
         # FTP account username
         ftp-username: ${{ secrets.FTP_USERNAME }}
         # FTP account password
