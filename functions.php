@@ -15,4 +15,6 @@ add_action( 'wp_enqueue_scripts', 'load_theme_child_scripts_styles', 9999 );
 
 /**************************************** CUSTOM FUNCTIONS **********************************/
 
+//** Disable Gutenberg and Keep the Classic Editor */
+add_filter('use_block_editor_for_post', '__return_false', 10);
 ?>
