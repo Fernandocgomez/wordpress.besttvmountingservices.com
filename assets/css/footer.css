@@ -1,8 +1,4 @@
 /* Default footer styles */
-.default-footer__nav .et-menu-nav {
+.default-footer__nav-menu .et-menu-nav {
     flex-direction: column;
-}
-
-body {
-    color: red;
 }
