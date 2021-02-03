@@ -22,7 +22,7 @@ function load_theme_child_scripts_styles() {
 add_filter('use_block_editor_for_post', '__return_false', 10);
 
 //** Add media attribute for devices with a max-width of 600px */
-add_filter('style_loader_tag', 'add_media_attribute', 10, 2);
+add_filter('style_loader_tag', 'add_media_attribute_mobile', 10, 2);
 
 function add_media_attribute_mobile($link, $handle) {
     if( $handle === 'mobile-css' ) {
