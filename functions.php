@@ -22,9 +22,9 @@ add_filter('use_block_editor_for_post', '__return_false', 10);
 //** Add media attribute for devices with a max-width of 600px */
 add_filter('style_loader_tag', 'add_media_attribute_mobile', 10, 2);
 
-function add_media_attribute_mobile($link, $handle) {
+function add_media_attribute_mobile($html, $handle) {
     if( $handle === 'mobile-css' ) {
-        $link = str_replace( '>', 'media="screen and (max-width: 600px)" />', $link );
+        return str_replace( 'media="all"', 'media="screen and (max-width: 600px)"', $html );
     }
-    return $link;
+    return $html;
 }
