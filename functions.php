@@ -16,8 +16,6 @@ function load_theme_child_scripts_styles() {
     wp_enqueue_script("child-js", get_stylesheet_directory_uri()."/assets/js/main.js");
 }
 
-/**************************************** CUSTOM FUNCTIONS **********************************/
-
 //** Disable Gutenberg and Keep the Classic Editor */
 add_filter('use_block_editor_for_post', '__return_false', 10);
 
