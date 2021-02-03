@@ -24,7 +24,7 @@ add_filter('style_loader_tag', 'add_media_attribute_mobile', 10, 2);
 
 function add_media_attribute_mobile($link, $handle) {
     if( $handle === 'mobile-css' ) {
-        $link = str_replace( '/>', 'media="screen and (max-width: 600px)" />', $link );
+        $link = str_replace( '>', 'media="screen and (max-width: 600px)" />', $link );
     }
     return $link;
 }
