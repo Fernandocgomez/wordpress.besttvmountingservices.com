@@ -14,7 +14,6 @@ function load_theme_child_scripts_styles() {
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' );
     wp_enqueue_style("child-css", get_stylesheet_directory_uri()."/assets/css/main.css");
     wp_enqueue_script("child-js", get_stylesheet_directory_uri()."/assets/js/main.js");
-    wp_enqueue_script('bootstrap-bundle-with-popper', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', '', '', true);
 }
 
 //** Disable Gutenberg and Keep the Classic Editor */
