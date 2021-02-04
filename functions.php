@@ -11,7 +11,6 @@ function my_theme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'load_theme_child_scripts_styles', 9999 );
 
 function load_theme_child_scripts_styles() {
-    wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' );
     wp_enqueue_style("child-css", get_stylesheet_directory_uri()."/assets/css/main.css");
     wp_enqueue_script("child-js", get_stylesheet_directory_uri()."/assets/js/main.js");
 }
